@@ -2,6 +2,8 @@
 @use "hero";
 @use "shows";
 @use "plans";
+@use "available-devices";
+@use "faq";
 
 @font-face {
   font-family: Avenir;
@@ -23,16 +25,16 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px; /* Largura da barra de rolagem */
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* Cor da barra de rolagem */
-  border-radius: 4px; /* Borda arredondada da barra de rolagem */
+  background-color: #888;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: variaveis.$corDeFundo; /* Cor de fundo da área de rolagem não preenchida */
+  background-color: variaveis.$corDeFundo;
 }
 
 body {
@@ -91,4 +93,43 @@ button {
   border-radius: 4px;
   margin-top: 2vw;
   margin-bottom: 8px;
+}
+
+.img-text-section {
+  padding: 5.6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+
+  &__text_container {
+    padding: 0 2vw;
+
+    h2 {
+      margin-bottom: 24px;
+    }
+  }
+
+  &--img-full-width {
+    display: block;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    &__text_container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: calc(50% - 5.6vw);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 }
