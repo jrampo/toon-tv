@@ -5,19 +5,19 @@
   top: 0;
   left: 0;
   background-color: variaveis.$corDeFundo;
-  transition: background-color 3ms ease;
+  transition: background-color 600ms ease;
   z-index: 100;
 
   &--is-hidden {
     background-color: transparent;
-    transition: background-color 3ms ease;
+    transition: background-color 600ms ease;
 
     .header {
       &__logo,
       &__links__item:first-child {
         opacity: 0;
         visibility: hidden;
-        transition: opacity 3ms ease;
+        transition: opacity 600ms ease;
       }
     }
   }
