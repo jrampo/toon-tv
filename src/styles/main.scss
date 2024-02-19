@@ -142,7 +142,7 @@ body {
 
   &--dark {
     background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
-    border-color: variaveis.$corTextoSecundaria;
+    border: none;
 
     &:hover {
       background-color: variaveis.$corTextoSecundaria;
