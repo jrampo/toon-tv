@@ -7,6 +7,7 @@
   background-color: variaveis.$corDeFundo;
   transition: background-color 600ms ease;
   z-index: 100;
+  border-bottom: 2px solid #3a717c;
 
   &--is-hidden {
     background-color: transparent;
@@ -36,7 +37,6 @@
     max-width: 80px;
     width: 100%;
     transition: opacity 0.5ms ease;
-    margin-top: 12px;
 
     @media (max-width: 768px) {
       max-width: 64px;
