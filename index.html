@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clone - Disney+</title>
+    <title>ToonTV</title>
     <link rel="icon" type="image/png" href="./dist/images/favicon.ico" />
     <link rel="stylesheet" href="dist/css/main.css" />
   </head>
@@ -13,8 +13,8 @@
         <h1>
           <img
             class="header__logo"
-            src="./dist/images/logo.png"
-            alt="Disney Plus"
+            src="./dist/images/Looney Tunes.svg"
+            alt="ToonTV"
           />
         </h1>
         <ul class="header__links">
@@ -30,7 +30,7 @@
     <section class="hero">
       <div class="hero__content">
         <div class="hero__content__branding">
-          <img src="./src/images/Looney Tunes.svg" alt="LooneyTunes" />
+          <img src="./dist/images/logohd.png" alt="LooneyTunes" />
         </div>
         <h3 class="title--small">Além da TV.</h3>
         <p>
@@ -42,192 +42,93 @@
     <section class="shows">
       <nav class="shows__tabs">
         <button
-          data-tab-button="em_breve"
+          data-tab-button="filmes"
           class="shows__tabs__button shows__tabs__button--is-active"
         >
           Filmes
         </button>
-        <button data-tab-button="populares" class="shows__tabs__button">
+        <button data-tab-button="animacoes" class="shows__tabs__button">
           Animações
         </button>
-        <button data-tab-button="star_plus" class="shows__tabs__button">
-          Especiais
+        <button data-tab-button="personagens" class="shows__tabs__button">
+          Personagens
         </button>
       </nav>
-      <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+      <ul data-tab-id="filmes" class="shows__list shows__list--is-active">
+        <li class="shows__list__item">
+          <img src="./dist/images/filmes/bugs.jpg" alt="Bugs Bunny Movie" />
+        </li>
         <li class="shows__list__item">
           <img
-            src="./dist/images/filmes/looneytunesshow.jpg"
-            alt="Looney Tunes Show"
+            src="./dist/images/filmes/duckdodgers.png"
+            alt="Duck Dodgers Movie"
           />
+        </li>
+        <li class="shows__list__item">
+          <img
+            src="./dist/images/filmes/frajola-movie.jpg"
+            alt="Frajola Movie"
+          />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/filmes/perna.PNG" alt="Dock Movie" />
         </li>
         <li class="shows__list__item middle">
-          <img src="./dist/images/filmes/baby.jpg" alt="Baby Looney Tunes" />
+          <img src="./dist/images/filmes/gagoPNG.PNG" alt="Gaguinho Movie" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/filmes/gang.jpg" alt="Gang" />
+          <img src="./dist/images/filmes/walky.png" alt="Walky Talky Movie" />
+        </li>
+      </ul>
+
+      <ul data-tab-id="animacoes" class="shows__list">
+        <li class="shows__list__item">
+          <img src="./dist/images/animacoes/filme.jpg" alt="Blue Monkey" />
+        </li>
+        <li class="shows__list__item middle">
+          <img src="./dist/images/animacoes/baby.jpg" alt="Baby Looney Tunes" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/filmes/patolino.jpg" alt="Patolino" />
-        </li>
-        <li class="shows__list__item">
-          <img src="./dist/images/filmes/filme.jpg" alt="Looney Tunes Movie" />
+          <img src="./dist/images/animacoes/gang.jpg" alt="Gang Looney" />
         </li>
         <li class="shows__list__item">
           <img
-            src="./dist/images/filmes/personagens.jpg"
+            src="./dist/images/animacoes/looneytunesshow.jpg"
             alt="Looney Tunes Show"
           />
         </li>
-      </ul>
-
-      <ul data-tab-id="populares" class="shows__list">
         <li class="shows__list__item">
-          <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Spidey" />
-        </li>
-        <li class="shows__list__item">
-          <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey" />
+          <img src="./dist/images/animacoes/patolino.jpg" alt="Patolino" />
         </li>
         <li class="shows__list__item">
           <img
-            src="./dist/images/mais_populares/cavaleira_da_lua.jpg"
-            alt="Cavaleiro da Lua"
-          />
-        </li>
-        <li class="shows__list__item">
-          <img
-            src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg"
-            alt="Dr Pool"
-          />
-        </li>
-        <li class="shows__list__item">
-          <img src="./dist/images/mais_populares/red.jpg" alt="Red" />
-        </li>
-        <li class="shows__list__item">
-          <img
-            src="./dist/images/mais_populares/tudo_igual_sqn.jpg"
-            alt="Tudo igual"
+            src="./dist/images/animacoes/personagens.jpg"
+            alt="Looney Tunes Characters"
           />
         </li>
       </ul>
 
-      <ul data-tab-id="star_plus" class="shows__list">
+      <ul data-tab-id="personagens" class="shows__list">
         <li class="shows__list__item">
+          <img src="./dist/images/personagens/bugsbuny.jpg" alt="Perna Longa" />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/personagens/frajola.jpg" alt="Frajola" />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/personagens/gaguinho.jpg" alt="Gaguinho" />
+        </li>
+        <li class="shows__list__item">
+          <img src="./dist/images/personagens/patolino.jpg" alt="Patolino" />
+        </li>
+        <li class="shows__list__item middle">
           <img
-            src="./dist/images/mais_no_star_plus/libertadores.jpg"
-            alt="Libertadores"
+            src="./dist/images/personagens/ligeirinho.jpg"
+            alt="Ligeirinho"
           />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair" />
-        </li>
-        <li class="shows__list__item">
-          <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA" />
-        </li>
-        <li class="shows__list__item">
-          <img
-            src="./dist/images/mais_no_star_plus/os_simpson.jpg"
-            alt="Os Simpsons"
-          />
-        </li>
-        <li class="shows__list__item">
-          <img
-            src="./dist/images/mais_no_star_plus/premier_league.jpg"
-            alt="Premier League"
-          />
-        </li>
-        <li class="shows__list__item">
-          <img
-            src="./dist/images/mais_no_star_plus/the_kardashians.jpg"
-            alt="The Kardashians"
-          />
-        </li>
-      </ul>
-    </section>
-
-    <section class="img-text-section">
-      <img
-        src="./dist/images/tv_pc_tablet_celular.png"
-        alt="Imagem dispositivos"
-      />
-      <div class="img-text-section__text_container">
-        <h2 class="title">Assista do seu jeito</h2>
-        <p class="text--big">
-          Aproveite a tela grande da TV ou assista no tablet, laptop, celular e
-          outros aparelhos. Nossa seleção de títulos em 4K não para de crescer.
-          Além disso, para a felicidade de todos, é possível assistir em até 4
-          telas ao mesmo tempo.
-        </p>
-      </div>
-    </section>
-
-    <section class="img-text-section img-text-section--img-full-width">
-      <picture
-        ><source
-          media="(max-width: 768px)"
-          srcset="./dist/images/fundo_rei_leao_celular.png"
-        />
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão" />
-      </picture>
-      <div
-        class="img-text-section__text_container img-text-section--img-full-width__text_container"
-      >
-        <h2 class="title">Baixe filmes e séries</h2>
-        <p class="text--big">
-          Baixe e assista quando e onde quiser. Assim, seus favoritos estão
-          sempre com você, até mesmo sem internet.
-        </p>
-      </div>
-    </section>
-
-    <section class="available-devices">
-      <h2 class="title">Disponível nos seus dispositivos favoritos.</h2>
-      <ul class="available-devices__list">
-        <li class="available-devices__list__item">
-          <img
-            src="./dist/images/dispositivos/computador.png"
-            alt="Computador"
-          />
-          <h4 class="title--small">Computador</h4>
-          <ul class="text">
-            <li>ChromeOS</li>
-            <li>MacOS</li>
-            <li>PC</li>
-          </ul>
-        </li>
-        <li class="available-devices__list__item">
-          <img src="./dist/images/dispositivos/tv.png" alt="TV" />
-          <h4 class="title--small">TV</h4>
-          <ul class="text">
-            <li>Amazon Fire TV</li>
-            <li>Android TV</li>
-            <li>Apple TV</li>
-            <li>ChromeCast</li>
-            <li>TV's LG</li>
-          </ul>
-        </li>
-        <li class="available-devices__list__item">
-          <img
-            src="./dist/images/dispositivos/videogames.png"
-            alt="VIdeoGame"
-          />
-          <h4 class="title--small">Videogames</h4>
-          <ul class="text">
-            <li>PS4</li>
-            <li>PS5</li>
-            <li>Xbox One</li>
-            <li>Xbox Series X</li>
-            <li>Xbox Series S</li>
-          </ul>
-        </li>
-        <li class="available-devices__list__item">
-          <img src="./dist/images/dispositivos/celular.png" alt="Celular" />
-          <h4 class="title--small">Celulares e tablets</h4>
-          <ul class="text">
-            <li>Tablets Amazon Fire</li>
-            <li>Celulares e Tablets Android</li>
-            <li>iPhone e iPad</li>
-          </ul>
+          <img src="./dist/images/personagens/piupiu.png" alt="Piu Piu" />
         </li>
       </ul>
     </section>
@@ -344,17 +245,39 @@
       </ul>
     </section>
 
+    <section class="contato">
+      <div class="container">
+        <h2 class="title">Formulário de Contato</h2>
+        <form action="/" method="post">
+          <label class="text--big" for="nome">Nome:</label>
+          <input class="text" type="text" id="nome" name="nome" required />
+
+          <label class="text--big" for="email">Email:</label>
+          <input class="text" type="email" id="email" name="email" required />
+
+          <label class="text--big" for="mensagem">Mensagem:</label>
+          <textarea
+            class="text"
+            id="mensagem"
+            name="mensagem"
+            required
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer__container">
         <img
           class="footer__logo"
-          src="./dist/images/disneyplus.svg"
-          alt="Disney+"
+          src="./dist/images/Looney Tunes.svg"
+          alt="ToonTV"
         />
         <ul class="footer__links">
           <li class="footer__links__item">
             <div class="languange-selector">
-              <img src="./dist/images/icones/globe.svg" alt="Globo do  mundo" />
               <select>
                 <option>English</option>
                 <option selected>Português</option>
@@ -380,21 +303,20 @@
             <a class="text--small" href="#">Ajuda</a>
           </li>
           <li class="footer__links__item">
-            <a class="text--small" href="#">Sobre o Disney+</a>
+            <a class="text--small" href="#">Sobre o ToonTV</a>
           </li>
         </ul>
 
         <p class="text--small">
-          ® 2024 Disney, Disney+ e The Walt Disney Company. Todos os direitos
-          reservados. Serviço de assinatura paga. Conteúdo sujeito a
-          disponibilidade.
+          ® 2024 ToonTV, ToonTV e ToonTV Company. Todos os direitos reservados.
+          Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
         </p>
         <p class="text--small">
-          Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e
-          condições. O serviço Disney+ é comercializado por The Walt Disney
-          Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas,
-          12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil
-          e CNPJ/M 73.042.962/0004-20
+          ToonTV é um serviço pago, baseado em assinatura e sujeito a termos e
+          condições. O serviço ToonTV é comercializado por ToonTV Company
+          (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551,
+          12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M
+          73.042.962/0004-20
         </p>
       </div>
     </footer>

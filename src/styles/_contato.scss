@@ -1,0 +1,58 @@
+@use "variaveis";
+
+.contato {
+  padding: 0 5.6vw;
+
+  .container {
+    max-width: 400px;
+    margin: 0;
+    margin-left: auto;
+    padding: 20px;
+    background-color: #13151d;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #13151d;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: variaveis.$corDeFundo;
+      color: variaveis.$corTextoSecundaria;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: variaveis.$corDeFundoBotaoSecundario;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: variaveis.$corDeFundoBotaoPrimario;
+    }
+  }
+}

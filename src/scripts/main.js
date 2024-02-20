@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', function() {
         const posicaoAtual = window.scrollY
 
-        if (posicaoAtual < alturaHero) {
+        if (posicaoAtual > alturaHero) {
             ocultaElementosHeader()
         }
         else {
@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function() {
         questions[i].addEventListener('click', abreOuFechaResposta)
     }
 })
+
+function ocultaElementosHeader () {
+    const header = document.querySelector('header')
+    header.classList.add('header--is-hidden')
+}
+
+function exibeElementosHeader() {
+    const header = document.querySelector('header')
+    header.classList.remove('header--is-hidden')
+}
 
 
 function abreOuFechaResposta(elemento) {

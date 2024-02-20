@@ -17,6 +17,11 @@
       max-width: 550px;
       margin: 0 auto;
 
+      img {
+        width: 450px;
+        margin-bottom: 20px;
+      }
+
       @media (max-width: 768px) {
         max-width: 180px;
       }
