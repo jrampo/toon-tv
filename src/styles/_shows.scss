@@ -1,9 +1,8 @@
 @use "variaveis";
 
 .shows {
-  margin-top: 36px;
   padding: 2vw 5.6vw;
-  min-height: 50vw;
+  min-height: 30vw;
 
   &__list {
     margin-top: 44px;
@@ -22,13 +21,10 @@
     &__item {
       img {
         max-width: 100%;
+        width: 450px;
         height: 280px;
         border-radius: 4px;
       }
-    }
-
-    .middle {
-      margin: 0 auto;
     }
   }
 

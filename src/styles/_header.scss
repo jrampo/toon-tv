@@ -36,6 +36,7 @@
     max-width: 80px;
     width: 100%;
     transition: opacity 0.5ms ease;
+    cursor: pointer;
 
     @media (max-width: 768px) {
       max-width: 64px;
