@@ -1,5 +1,5 @@
 .faq {
-  padding: 5.6vw;
+  padding: 50px 5.6vw;
 
   h2 {
     text-align: center;
@@ -14,6 +14,7 @@
 
   &__questions {
     list-style-type: none;
+
     &__item {
       background-color: #13151d;
       margin-bottom: 16px;

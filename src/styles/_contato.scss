@@ -1,7 +1,51 @@
 @use "variaveis";
 
 .contato {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   padding: 0 5.6vw;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  .side {
+    padding: 3vw;
+    border-radius: 10px;
+    background-color: #13151d;
+
+    &__icons {
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 36px;
+    }
+
+    ul {
+      margin-top: 24px;
+      color: #fff;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    p {
+      color: white;
+      margin-top: 24px;
+    }
+  }
 
   .container {
     max-width: 400px;
